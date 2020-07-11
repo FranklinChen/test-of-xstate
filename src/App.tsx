@@ -79,7 +79,7 @@ class App extends Component<{}, TapePlayerComponentState> {
   }
 
   mayNotSend = (event: EventId) =>
-    this.state.nextPossibleStates.findIndex(v => v === event) == -1;
+    this.state.nextPossibleStates.findIndex(v => v === event) === -1;
 
   isCurrentState = (state: AvailableStates) =>
     state === this.state.currentState;
